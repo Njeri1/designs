@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Discover</string>
+    <string name="title_activity_top_ranked_author_and_book">TopRankedAuthorAndBook</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="popular">Popular</string>
+    <string name="discover">Discover</string>
+
+    <string name="john_doe">John Doe</string>
+    <string name="todo">TODO</string>
+    <string name="details">details</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="logo">logo</string>
+    <string name="username">Username</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="login">Login</string>
+    <string name="reset_password">Reset password</string>
+    <string name="new_password">new password</string>
+    <string name="reset">reset</string>
+    <string name="old_password">old_password</string>
+
+</resources>

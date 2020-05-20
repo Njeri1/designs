@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".top_ranked_author">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingBottom="50dp"
+            android:background="@drawable/sharp">
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:background="@color/colorPrimary">
+                <Button
+                    android:id="@+id/top_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/menu"
+                    android:layout_marginLeft="20dp">
+                </Button>
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/left_top_menu"-->
+                <!--                    android:layout_width="30dp"-->
+                <!--                    android:layout_marginTop="@dimen/fab_margin"-->
+                <!--                    android:layout_marginStart="300dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:background="@drawable/ic_menu">-->
+                <!--                </Button>-->
+            </GridLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="629dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="142dp"
+                    android:layout_height="111dp"
+                    android:contentDescription="@string/details"
+
+                    android:src="@drawable/obama"
+                    tools:layout_editor_absoluteX="171dp"
+                    tools:layout_editor_absoluteY="71dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+
+                    android:layout_width="90dp"
+                    android:layout_height="92dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.168"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.132"
+                    app:srcCompat="@drawable/full_rounded" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="90dp"
+                    android:layout_height="92dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.638"
+                    app:srcCompat="@drawable/full_rounded"
+                    tools:layout_editor_absoluteX="54dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="90dp"
+                    android:layout_height="92dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.888"
+                    app:srcCompat="@drawable/full_rounded"
+                    tools:layout_editor_absoluteX="54dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="90dp"
+                    android:layout_height="92dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.392"
+                    app:srcCompat="@drawable/full_rounded"
+                    tools:layout_editor_absoluteX="54dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <WebView-->
+<!--                android:id="@+id/web_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="56dp"-->
+<!--                tools:ignore="WebViewLayout"></WebView>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded"
+        android:elevation="16dp"
+        app:cnb_addBottomInset="true"
+        app:cnb_menuResource="@menu/menu_bottom"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>
